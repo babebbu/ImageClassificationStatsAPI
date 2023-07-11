@@ -1,6 +1,5 @@
 package dev.babebbu.academic.thesis.master.stats.controllers;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import dev.babebbu.academic.thesis.master.stats.models.entities.ApplicationType;
 import dev.babebbu.academic.thesis.master.stats.models.entities.MLEnvironment;
 import dev.babebbu.academic.thesis.master.stats.models.entities.NetworkTier;
@@ -16,7 +15,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 

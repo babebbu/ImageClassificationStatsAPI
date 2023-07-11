@@ -1,6 +1,5 @@
 package dev.babebbu.academic.thesis.master.stats.controllers;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import dev.babebbu.academic.thesis.master.stats.models.entities.*;
 import dev.babebbu.academic.thesis.master.stats.models.requests.DeviceRequest;
 import dev.babebbu.academic.thesis.master.stats.repositories.*;

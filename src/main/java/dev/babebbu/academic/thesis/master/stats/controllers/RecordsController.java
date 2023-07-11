@@ -24,8 +24,6 @@ public class RecordsController {
 
     private final RecordsRepository repository;
     private final DevicesRepository devicesRepository;
-    private final ObjectMapper objectMapper;
-    private final Logger log = LoggerFactory.getLogger(getClass());
 
     @GetMapping
     public Object list() {
