@@ -32,9 +32,9 @@ public class DevicesController {
 
     @PostMapping
     public Object create(@RequestBody DeviceRequest request) {
-        Optional<MLEnvironment> mlEnvironment = mlEnvironmentsRepository.findById(request.getEnvironment());
+        Optional<MLEnvironment> environment = mlEnvironmentsRepository.findById(request.getEnvironment());
 
-        if (mlEnvironment.isEmpty()) {
+        if (environment.isEmpty()) {
             return ResponseEntity.badRequest().body(Map.of(
                 "message", "Some of arguments are not exist in the database.",
                 "exists", Map.of(
@@ -51,7 +51,7 @@ public class DevicesController {
             .hardware(request.getHardware())
             .location(request.getLocation())
             .latency(request.getLatency())
-            .mlEnvironment(mlEnvironment.get())
+            .environment(environment.get())
             .build();
 
         return repository.save(entity);
@@ -65,9 +65,9 @@ public class DevicesController {
             return notFoundError();
         }
 
-        Optional<MLEnvironment> mlEnvironment = mlEnvironmentsRepository.findById(request.getEnvironment());
+        Optional<MLEnvironment> environment = mlEnvironmentsRepository.findById(request.getEnvironment());
 
-        if (mlEnvironment.isEmpty()) {
+        if (environment.isEmpty()) {
             return ResponseEntity.badRequest().body(Map.of(
                 "message", "Some of arguments are not exist in the database.",
                 "exists", Map.of(
@@ -85,7 +85,7 @@ public class DevicesController {
             .hardware(request.getHardware())
             .location(request.getLocation())
             .latency(request.getLatency())
-            .mlEnvironment(mlEnvironment.get())
+            .environment(environment.get())
             .build();
 
         return repository.save(entity);

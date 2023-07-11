@@ -25,6 +25,6 @@ public class Device {
 
     @ManyToOne
     @JoinColumn
-    private MLEnvironment mlEnvironment;
+    private MLEnvironment environment;
 
 }
