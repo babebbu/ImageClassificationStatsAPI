@@ -2,12 +2,9 @@ package dev.babebbu.academic.thesis.master.stats.controllers;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import dev.babebbu.academic.thesis.master.stats.models.entities.Device;
-import dev.babebbu.academic.thesis.master.stats.models.entities.MLEnvironment;
 import dev.babebbu.academic.thesis.master.stats.models.entities.Record;
-import dev.babebbu.academic.thesis.master.stats.models.requests.DeviceRequest;
 import dev.babebbu.academic.thesis.master.stats.models.requests.RecordRequest;
 import dev.babebbu.academic.thesis.master.stats.repositories.DevicesRepository;
-import dev.babebbu.academic.thesis.master.stats.repositories.MLEnvironmentsRepository;
 import dev.babebbu.academic.thesis.master.stats.repositories.RecordsRepository;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;

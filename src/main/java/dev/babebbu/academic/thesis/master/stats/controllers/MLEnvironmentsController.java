@@ -29,8 +29,6 @@ public class MLEnvironmentsController {
     private final ApplicationTypesRepository applicationTypesRepository;
     private final TiersRepository networkTiersRepository;
     private final RuntimesRepository runtimesRepository;
-    private final ObjectMapper objectMapper;
-
     @GetMapping
     public Object list() {
         return repository.findAll(Pageable.unpaged());

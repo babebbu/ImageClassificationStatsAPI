@@ -20,7 +20,6 @@ public class DevicesController {
 
     private final DevicesRepository repository;
     private final MLEnvironmentsRepository mlEnvironmentsRepository;
-    private final ObjectMapper objectMapper;
 
     @GetMapping
     public Object list() {
