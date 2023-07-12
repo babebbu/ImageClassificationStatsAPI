@@ -71,7 +71,6 @@ public class DevicesController {
             return ResponseEntity.badRequest().body(Map.of(
                 "message", "Some of arguments are not exist in the database.",
                 "exists", Map.of(
-
                     "environment", false
                 )
             ));

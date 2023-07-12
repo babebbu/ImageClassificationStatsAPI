@@ -45,6 +45,8 @@ public class RecordsController {
             ));
         }
 
+        System.out.println(request);
+
         Record entity = Record.builder()
             .device(device.get())
             .inferenceTime(request.getInferenceTime())
